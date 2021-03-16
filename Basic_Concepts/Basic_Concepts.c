@@ -3,6 +3,7 @@
 #define PIE 3.1415  // preprocessor directive, doesn't uses memory
 
 int main(){
+
 	
 	/*Data types*/
 	printf("Hello World\n"); // use doubel quotes for strings in printf statement
@@ -51,6 +52,7 @@ int main(){
 	printf("Character\n");
 	character = getchar();
 	putchar(character);
+	printf("\n");
 	printf("\nString\n");
 	fgets(ss,100,stdin); //compiler dependent i guess
 	printf("\nYou entered strings:\n");
@@ -76,11 +78,20 @@ int main(){
 	int x, y;
     char text[20];
 
-    scanf("%2d %d %f %5s", &x, &y,&fl, text);
+    scanf("%2d\n %d\n %f\n %5s ", &x, &y,&fl, text);
     /* input: 1234  5.7  elephant */
-    printf("%d  %d %f %s", x, y,fl, text);
+    printf("%d  %d %f %s\n", x, y,fl, text);
     /* output: 12  34  eleph */
+    printf("\n");
+    getchar();
+    char yo[100] = "this is a test\n";
+	char yolo[100];
+	printf("Enter yolo:\n");
+	gets(yolo);
+	puts(yolo);
+	puts(yo);
 	
+
 	
 	
 	return 0;
