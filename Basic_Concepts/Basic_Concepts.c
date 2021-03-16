@@ -64,5 +64,24 @@ int main(){
 	scanf("%[^\n]%*c",&s);
 	printf("\nYOu entered this string:%s",s);
 	
+	/*More on format specifiers*/
+	
+	int in;
+	float fl;
+	char charc;
+	char stri[100];
+//	scanf("%d %f %c %s",&in,&fl,charc,stri);
+//	printf("You entered following data:\n");
+//	printf("%d %f %c %s",in,fl,charc,stri);
+	int x, y;
+    char text[20];
+
+    scanf("%2d %d %f %5s", &x, &y,&fl, text);
+    /* input: 1234  5.7  elephant */
+    printf("%d  %d %f %s", x, y,fl, text);
+    /* output: 12  34  eleph */
+	
+	
+	
 	return 0;
 }
