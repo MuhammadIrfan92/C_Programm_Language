@@ -17,7 +17,33 @@ int main(){
 	char state[50];
 	int population;
 	sscanf(inf, "%s %s %d", city, state, &population);
-	printf("%d people live in %s, %s.", population, city, state);
+	printf("%d people live in %s, %s.\n", population, city, state);
+	
+	strcat(dept,state);
+	printf("lol %s\n",dept);
+	
+	/*string to integer conversion*/
+	
+	// int atoi ASCII to integer
+	// double atof ASCII to float
+	// long int atol ASCII to long integer
+	
+	char num[10]="1234";
+	int number= atoi(num);
+	printf("%d\n",number);
+	
+	/* array of pointers for related strings */
+	
+	char *trip[]={   // can enter or omit limit
+	"suitcase lol",
+	"passport",
+	"ticket"};
+	
+	int i =0;
+	
+	for (i=0;i<3;i++){
+		printf("%s\n",trip[i]);
+	}
 	
 	return 0;
 }
