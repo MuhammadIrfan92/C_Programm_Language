@@ -6,7 +6,7 @@ void test(int * x) {
 };
 int main(){
 	
-	int a[5]={1,2,3,4,5};
+	int a[5]={1,2,110,4,5};
 	int* ptr;
 	int i;
 	int num1 = 3, num2 = 4;
