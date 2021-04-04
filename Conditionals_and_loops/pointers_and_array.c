@@ -35,6 +35,26 @@ int main(){
 	
 }
 
+
+/* array[4] = *(array+4)
+int * test() {
+  static int x[4];
+  int i =0;
+  for(i=0;i<4;i++){
+    x[i] = i%2;
+    printf("%d\n",x[i]);
+  }
+  return x;
+} 
+
+int main() {
+  int * arr = test();
+  printf("%d\n",*(arr + 3)); // forth element of array[4]={0,1,0,1}
+
+  
+}
+*/
+
 void swap(int* num1, int* num2){
 	int temp;
 	temp = *num1;
