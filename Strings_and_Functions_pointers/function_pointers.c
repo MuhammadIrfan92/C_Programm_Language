@@ -13,6 +13,16 @@ int main(){
 	
 	void (*funptr_calculator[])(int a, int b)={add, sub, mul}; //array of funtion pointers.
 	
+	/* another way to define array of function pointers
+	  int x, y, choice, result;
+  int (*op[4])(int, int);
+
+  op[0] = add;
+  op[1] = subtract;
+  op[2] = multiply;
+  op[3] = divide;
+	*/
+	
 
 	funptr_calculator[1](3,4);
 	
