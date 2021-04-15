@@ -6,7 +6,7 @@ union val {
   char str[20]; 
 };
 
-typedef struct { // useful in structures. like in this case the vehicle canhave id_num or VIN as id but not both.
+typedef struct { // useful in structures. like in this case the vehicle can have id_num or VIN as id but not both.
   char make[20];
   int model_year;
   int id_type; /* 0 for id_num, 1 for VIN */
@@ -21,11 +21,11 @@ int main() {
 
   test.int_num = 123;
   test.fl_num = 98.76;
-  strcpy(test.str, "hello");
+  strcpy(test.str, "hello"); // union keeps only last data entered i.e. it over writes the previous data.
 
-  printf("%d\n", test.int_num);
-  printf("%f\n", test.fl_num);
-  printf("%s\n", test.str);
+  printf("%d\n", test.int_num); // will not be printed out
+  printf("%f\n", test.fl_num); // will not be printed out
+  printf("%s\n", test.str); // will be printed out
   
   /*union as member of structure*/
   

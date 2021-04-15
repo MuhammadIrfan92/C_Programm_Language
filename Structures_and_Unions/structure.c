@@ -48,6 +48,13 @@ int main(){
 		.title="intro to exit again",
 		.id=103
 		};
+		
+	struct course c9;
+	
+	c9 =(struct course){
+		.hours = 39,
+		.title = "what the ",
+		.id = 193};
 	
 	//4.
 	struct course c4;
