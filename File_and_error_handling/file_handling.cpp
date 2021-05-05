@@ -1,5 +1,12 @@
 #include <stdio.h>
 
+
+/*File extensions alone do not determine the format of data in a file,
+ but they are useful for indicating the type of data to expect. For example,
+ a .txt extension indicates a text file, .bin is for binary data,
+  .csv indicates comma separated values, and .dat is a data file.*/
+
+
 int main (){
 	FILE *fptr;
 	
